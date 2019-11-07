@@ -9,6 +9,19 @@ package practicaanimales;
  *
  * @author PC
  */
-public class Perro {
+public class Perro extends Animal {
+    private String raza;
     
+    @Override
+    public void desplazar(){
+        
+    }
+    public void ladrar(){
+        System.out.println(getNombre"<nombre> dice 'Guau guau guau!");
+    }
+    
+    @Override
+    public String toString(){
+        
+    }
 }
