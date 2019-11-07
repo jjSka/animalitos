@@ -15,12 +15,13 @@ public abstract class Animal {
     private String nombre;
     private int edad;
     protected float peso;
-    private Acuatico acuatico;
+    protected Acuatico acuatico;
 
     public Animal(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
         this.peso= 0.2f;
+        this.acuatico=Acuatico.NO_DEFINIDO;
     }
 
     public String getNombre() {

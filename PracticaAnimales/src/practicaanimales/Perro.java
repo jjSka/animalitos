@@ -16,6 +16,7 @@ public class Perro extends Animal {
     public Perro(String nombre, int edad, String raza) {
         super(nombre, edad);
         this.raza = raza;
+        this.acuatico=Acuatico.TERRESTRE;
     }
 
     public String getRaza() {
@@ -37,6 +38,6 @@ public class Perro extends Animal {
 
     @Override
     public String toString() {
-        return getNombre() + " tiene " + getEdad() + " y pesa " + getPeso() + "años y es de raza " + getRaza() + ".";
+        return getNombre() + " tiene " + getEdad() + " años y pesa " + getPeso() + "kg y es de raza " + getRaza() + ".";
     }
 }
