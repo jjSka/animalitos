@@ -15,7 +15,7 @@ public abstract class Animal {
     private String nombre;
     private int edad;
     protected float peso;
-    private Acuatico acuatico;
+    protected Acuatico acuatico;
 
     public Animal(String nombre, int edad) {
         this.nombre = nombre;
