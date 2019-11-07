@@ -10,18 +10,33 @@ package practicaanimales;
  * @author PC
  */
 public class Perro extends Animal {
+
     private String raza;
-    
-    @Override
-    public void desplazar(){
-        
+
+    public Perro(String nombre, int edad, String raza) {
+        super(nombre, edad);
+        this.raza = raza;
     }
-    public void ladrar(){
-        System.out.println(getNombre"<nombre> dice 'Guau guau guau!");
+
+    public String getRaza() {
+        return raza;
     }
-    
+
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+
     @Override
-    public String toString(){
-        
+    public void desplazar() {
+        System.out.println(getNombre() + " corre contento");
+    }
+
+    public void ladrar() {
+        System.out.println(getNombre() + " dice 'Guau guau guau!");
+    }
+
+    @Override
+    public String toString() {
+        return getNombre() + " tiene " + getEdad() + " y pesa " + getPeso() + "años y es de raza " + getRaza() + ".";
     }
 }

@@ -14,8 +14,14 @@ public abstract class Animal {
 
     private String nombre;
     private int edad;
-    private int peso;
+    protected float peso;
     private Acuatico acuatico;
+
+    public Animal(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.peso= 0.2f;
+    }
 
     public String getNombre() {
         return nombre;
@@ -33,7 +39,7 @@ public abstract class Animal {
         this.edad = edad;
     }
 
-    public int getPeso() {
+    public float getPeso() {
         return peso;
     }
 
@@ -50,7 +56,7 @@ public abstract class Animal {
     }
 
     public void alimentar(String alimento) {
-        System.out.println(this.nombre + " mastica y come " + alimento + ".");
+        System.out.println(getNombre() + " mastica y come " + alimento + ".");
     }
 
     public static void mostrar(Animal animal) {
@@ -62,5 +68,5 @@ public abstract class Animal {
         return ("Nombre: " + this.getNombre() + " edad: " + this.getEdad() + " peso: " + this.getPeso() + "kg. Tipo: " + this.getAcuatico());
     }
     //CODE ALO 2/2
-    
+
 }
