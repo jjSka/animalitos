@@ -9,7 +9,7 @@ package practicaanimales;
  *
  * @author PC
  */
-public enum Acuatico {
+public enum Habitat {
     NO_DEFINIDO,
     ACUATICO,
     TERRESTRE,

@@ -16,7 +16,7 @@ public class Perro extends Animal {
     public Perro(String nombre, int edad, String raza) {
         super(nombre, edad);
         this.raza = raza;
-        this.acuatico=Acuatico.TERRESTRE;
+        this.acuatico=Habitat.TERRESTRE;
     }
 
     public String getRaza() {
