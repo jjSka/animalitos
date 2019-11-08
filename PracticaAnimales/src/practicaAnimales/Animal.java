@@ -20,7 +20,7 @@ public abstract class Animal {
     public Animal(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
-        this.peso= 0.2f;
+        this.peso= 0.025f;
         this.acuatico=Habitat.NO_DEFINIDO;
     }
 
@@ -44,7 +44,7 @@ public abstract class Animal {
         return peso;
     }
 
-    public void setPeso(int peso) {
+    public void setPeso(float peso) {
         this.peso = peso;
     }
 
@@ -62,7 +62,7 @@ public abstract class Animal {
     }
 
     public static void mostrar(Animal animal) {
-        animal.toString();
+        System.out.println(animal.toString());
     }
 
     @Override
