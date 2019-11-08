@@ -11,6 +11,9 @@ package practicaAnimales;
  */
 public class Perro extends Animal {
 
+    /**
+     * Raza del perro
+     */
     private String raza;
 
     public Perro(String nombre, int edad, String raza) {
@@ -27,11 +30,18 @@ public class Perro extends Animal {
         this.raza = raza;
     }
 
+    
+    /**
+     * Los perros se desplazan con sus extremidades
+     */
     @Override
     public void desplazar() {
         System.out.println(getNombre() + " corre contento");
     }
 
+    /**
+     * Sonido del perro para comunicarse
+     */
     public void ladrar() {
         System.out.println(getNombre() + " dice 'Guau guau guau!");
     }

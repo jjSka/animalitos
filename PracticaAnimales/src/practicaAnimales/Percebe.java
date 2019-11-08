@@ -17,11 +17,18 @@ public class Percebe extends Animal {
     }
 
     
+    /**
+     * Los percebes no se desplazan, se adhieren a una roca
+     */
     @Override
     public void desplazar() {
         System.out.println("Está adherido a una roca"); //To change body of generated methods, choose Tools | Templates.
     }
 
+    /**
+     * Nutrición del percebe
+     * @param alimento 
+     */
     @Override
     public void alimentar(String alimento) {
         System.out.println(this.getNombre() + " mastica y se nutre de " + alimento + "."); //To change body of generated methods, choose Tools | Templates.

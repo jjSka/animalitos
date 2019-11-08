@@ -9,7 +9,11 @@ package practicaAnimales;
  *
  * @author PC
  */
-//push
+
+/**
+ * Opciones para hábitat de la especie. Es una enumeración.
+ * @author PC
+ */
 public enum Habitat {
     NO_DEFINIDO,
     ACUATICO,

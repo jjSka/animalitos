@@ -15,8 +15,6 @@ public class PracticaAnimales {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Animal a= new Perro("Rodriguez",10,"Bull Terrier");
-        System.out.println(a.toString());
     }
     
 }

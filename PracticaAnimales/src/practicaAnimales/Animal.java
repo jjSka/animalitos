@@ -14,8 +14,8 @@ public abstract class Animal {
 
     private String nombre;
     private int edad;
-    protected float peso;
-    protected Habitat habitat;
+    protected float peso; // Precisión de 0.01
+    protected Habitat habitat; //Diferentes Habitats posibles
 
     public Animal(String nombre, int edad) {
         this.nombre = nombre;
@@ -57,10 +57,18 @@ public abstract class Animal {
         return this.habitat;
     }
 
+    /**
+     * Alimentación del animal en cuestión
+     * @param alimento 
+     */
     public void alimentar(String alimento) {
         System.out.println(getNombre() + " mastica y come " + alimento + ".");
     }
 
+    /**
+     * Muestra toda la información del animal en cuestión
+     * @param animal 
+     */
     public static void mostrar(Animal animal) {
         System.out.println(animal.toString());
     }
