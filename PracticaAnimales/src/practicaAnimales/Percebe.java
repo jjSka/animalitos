@@ -13,7 +13,7 @@ public class Percebe extends Animal {
 
     public Percebe(String nombre, int edad) {
         super(nombre, edad);
-        acuatico=acuatico.ACUATICO;
+        habitat=habitat.ACUATICO;
     }
 
     
